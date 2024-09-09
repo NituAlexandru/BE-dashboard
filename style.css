@@ -66,9 +66,23 @@ body {
 
 .header-icons {
   display: flex;
-  gap: 20px;
-  font-size: 24px;
+  gap: 10px;
+}
+
+.header-icons .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-icons .icon-wrapper i {
+  max-width: 100%;
+  max-height: 100%;
   color: #007bff;
+  font-size: 30px;
 }
 
 .main-container {
@@ -81,7 +95,6 @@ body {
 .sidebar {
   background-color: #f0f4f8;
   width: 300px;
-
   height: calc(100vh - 60px);
 }
 
@@ -96,24 +109,31 @@ body {
   color: #333;
   cursor: pointer;
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 15px;
   justify-content: space-between;
 }
-.menu-item i {
-  font-size: 20px;
+
+.menu-item .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
 }
+
+.menu-item img,
+.menu-item i {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .menu-arrow {
   margin-left: auto;
   font-size: 16px;
   color: #007bff;
 }
 
-.menu-item i.menu-arrow {
-  color: #007bff;
-}
 .menu-item.active {
   background-color: #eaf6fc;
   color: #007bff;
